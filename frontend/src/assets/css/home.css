@@ -1,0 +1,111 @@
+.SignUpForm{
+    position: absolute;
+    top: 139px;
+    left: 600px;
+    width: 30%;
+    height: 65%;
+    border: 2px solid #e1e1e1;
+    border-radius: 25px;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 10px 10px rgb(236, 237, 238);
+
+}
+
+.SignUpForm1{
+    position: absolute;
+    top: 106px;
+    left: 600px;
+    width: 30%;
+    height: 75%;
+    border: 2px solid #e1e1e1;
+    border-radius: 25px;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 10px 10px rgb(236, 237, 238);
+
+}
+
+
+.homeContainer{
+    text-align: center;
+    position: absolute;
+    top: 25px;
+
+}
+
+.homeContainer h1{
+    position: relative;
+    top: 103px;
+    left: 691px;
+    font-size: 50px !important;
+
+
+}
+
+.signUp{
+    background-color: #1BD067 !important;
+    font-size: 20px !important;
+    position: relative;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border: none !important;
+    left: 660px;
+    top: 291px;
+}
+
+
+.login{
+    font-size: 20px !important;
+    position: relative;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border: none !important;
+    left: 712px;
+    top: 291px;
+}
+
+form h3{
+
+  position: relative;
+  bottom: 10px;
+  text-align: center;
+}
+
+.innerContainer{
+    position: relative;
+    width: 80%;
+    height: 70%;
+    left: 10%;
+    top: 8%;
+   
+}
+
+.innerContainer1{
+    position: relative;
+    width: 80%;
+    height: 70%;
+    left: 10%;
+    top: 18%;
+   
+}
+
+.mb-3 label{
+    position: relative;
+    text-align: left;
+    font-weight: bold;
+}
+
+#gotoLogin{
+    position: relative;
+    text-align: center;
+
+}
