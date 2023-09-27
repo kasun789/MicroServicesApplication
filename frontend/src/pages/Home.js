@@ -19,21 +19,17 @@ export default function Home() {
 
 
   return (
+    <div>
+      <div className="homeContainer">
+        <h1>Sri Tel (PVT)LTD</h1>
 
-
-   <div>
-   <div className='homeContainer'>
-            <h1>Sri Tel (PVT)LTD</h1>
-            
-            <Button onClick={loadSignUp} className='signUp'>Sign Up</Button>
-            <Button onClick={loadLogin} className='login'>Login</Button>
-   </div>
-   
-   
-   
-   
-   </div>
-   
-
-
-  )}
+        <Button onClick={loadSignUp} className="signUp">
+          Sign Up
+        </Button>
+        <Button onClick={loadLogin} className="login">
+          Login
+        </Button>
+        
+      </div>
+    </div>
+  );}
