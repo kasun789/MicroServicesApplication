@@ -1,6 +1,7 @@
 import React from 'react'
 import SideBar from '../components/SideBar'
 import AccountBalance from '../components/AccountBalance';
+import CurrentPackage from '../components/CurrentPackage';
 
 const LandingPage = () => {
   return (
@@ -9,7 +10,12 @@ const LandingPage = () => {
         <SideBar />
       </div>
       <div>
-        <AccountBalance />
+        <div className='flex flex-col'>
+          <AccountBalance />
+        </div>
+        <div>
+          <CurrentPackage />
+        </div>
       </div>
     </div>
   );
