@@ -9,8 +9,8 @@ const AccountBalance = () => {
   };
 
   return (
-    <div className="container flex-col items-center justify-center mx-auto mt-8 text-center">
-      <h2>Account balance</h2>
+    <div className="container flex-col items-center justify-center mx-auto mt-8 text-center shadow-xl w-[400px]">
+      <h1 className="text-2xl font-bold text-black-500">Account Balance</h1>
       <div className="space-x-4 fle">
         <button
           className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"

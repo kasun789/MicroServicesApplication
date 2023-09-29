@@ -5,12 +5,12 @@ import CurrentPackage from '../components/CurrentPackage';
 
 const LandingPage = () => {
   return (
-    <div className='flex'>
+    <div className="flex">
       <div>
         <SideBar />
       </div>
-      <div>
-        <div className='flex flex-col'>
+      <div className="grid-flow-row grid-cols-1">
+        <div>
           <AccountBalance />
         </div>
         <div>

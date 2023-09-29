@@ -21,35 +21,35 @@ function CurrentPackage() {
         <div className="p-5 space-y-5">
           <h1 className="text-2xl font-bold text-black-500">Current Package</h1>
           <div className="space-y-2">
-            <div className="flex justify-start items-center space-x-5">
+            <div className="flex items-center justify-start space-x-5">
                 <div className="flex items-center space-x-5 py-1 min-w-[200px]">
                     <span className="text-base font-bold text-black-500">Package Name:</span>
                 </div>
-                <label className="font-medium py-1">{packageDetails.name}</label>
+                <label className="py-1 font-medium">{packageDetails.name}</label>
             </div>
-            <div className="flex justify-start items-center space-x-5">
+            <div className="flex items-center justify-start space-x-5">
                 <div className="flex items-center space-x-5 py-1 min-w-[200px]">
                     <span className="text-base font-bold text-black-500">Package Duration:</span>
                 </div>
-                <label className="font-medium py-1">{packageDetails.duration}</label>
+                <label className="py-1 font-medium">{packageDetails.duration}</label>
             </div>
-            <div className="flex justify-start items-center space-x-5">
+            <div className="flex items-center justify-start space-x-5">
                 <div className="flex items-center space-x-5 py-1 min-w-[200px]">
                     <span className="text-base font-bold text-black-500">Data :</span>
                 </div>
-                <label className="font-medium py-1">{packageDetails.data}</label>
+                <label className="py-1 font-medium">{packageDetails.data}</label>
             </div>
-            <div className="flex justify-start items-center space-x-5">
+            <div className="flex items-center justify-start space-x-5">
                 <div className="flex items-center space-x-5 py-1 min-w-[200px]">
                     <span className="text-base font-bold text-black-500">Voice:</span>
                 </div>
-                <label className="font-medium py-1">{packageDetails.voice}</label>
+                <label className="py-1 font-medium">{packageDetails.voice}</label>
             </div>
-            <div className="flex justify-start items-center space-x-5">
+            <div className="flex items-center justify-start space-x-5">
                 <div className="flex items-center space-x-5 py-1 min-w-[200px]">
                     <span className="text-base font-bold text-black-500">Package Description:</span>
                 </div>
-                <label className="font-medium py-1">{packageDetails.description}</label>
+                <label className="py-1 font-medium">{packageDetails.description}</label>
             </div>
           </div>
           <div className="flex items-end justify-end">
