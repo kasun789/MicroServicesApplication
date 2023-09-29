@@ -2,6 +2,7 @@ package com.SriTel.Signup.Service;
 
 import com.SriTel.Signup.Model.User;
 import com.SriTel.Signup.Repository.UserRepository;
+import com.SriTel.Signup.dto.UserLoginRequestDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,6 +40,14 @@ public class UserServiceImp implements UserService{
     public User viewSpecificUser(int userId) {
         return userRepository.findById(userId).orElse(null);
     }
+
+    @Override
+    public Optional<User> getUserByEmail(String email) {
+        Optional<User> user = userRepository.findByEmail(email);
+        return user;
+    }
+
+
 
     @Override
     public List<User> viewAll() {
