@@ -21,11 +21,14 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signUp" element={<SignUp />}></Route>
+
           <Route path='/dashboard' element={<Dashboard/>}></Route>
           <Route path='/profile' element={<Profile/>}></Route>
           <Route path='/support' element={<Support/>}></Route>
           <Route path='/payment' element={<Payment/>}></Route>
+
           <Route path="/LandingPage" element={<LandingPage />}></Route>
+          
         </Routes>
       </Router>
     </div>
