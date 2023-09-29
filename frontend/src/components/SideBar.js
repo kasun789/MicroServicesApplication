@@ -7,14 +7,14 @@ const SideBar = () => {
       textDecoration: "none", // Remove underlines
     };
   return (
-    <div className="flex">
+    <div className="flex fixed">
       <div className="flex flex-col h-screen p-3 no-underline bg-white shadow w-60">
         <div className="space-y-3">
           <div className="flex items-center">
             <h2 className="text-xl font-bold">Dashboard</h2>
           </div>
           <div className="flex-1 font-bold">
-            <Link className="flex ml-[40px] mt-[10px]" style={linkStyle}>
+            <Link className="flex ml-[40px] mt-[10px]" style={linkStyle} to="/landingPage">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 m-[5px]"
@@ -31,7 +31,7 @@ const SideBar = () => {
               </svg>
               <span className="m-1">Dashboard</span>
             </Link>
-            <Link className="flex ml-[40px] mt-[10px]" style={linkStyle}>
+            <Link className="flex ml-[40px] mt-[10px]" style={linkStyle} to="/profile">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -50,7 +50,7 @@ const SideBar = () => {
               <span className="m-1">Profile</span>
             </Link>
 
-            <Link className="flex ml-[40px] mt-[10px]" style={linkStyle}>
+            <Link className="flex ml-[40px] mt-[10px]" style={linkStyle} to="/payment">
               <svg
                 xmlns=""
                 className="w-8 h-8 mt-[2px] mr-[2px]"
@@ -69,7 +69,7 @@ const SideBar = () => {
               <span className="m-1">Bill & Payment</span>
             </Link>
 
-            <Link className="flex ml-[40px] mt-[10px]" style={linkStyle}>
+            <Link className="flex ml-[40px] mt-[10px]" style={linkStyle} to="/support">
               <svg
                 fill="none"
                 stroke="currentColor"
