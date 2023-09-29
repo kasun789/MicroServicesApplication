@@ -6,17 +6,11 @@ import CurrentPackage from '../components/CurrentPackage';
 const LandingPage = () => {
   return (
     <div className='flex'>
-      <div>
         <SideBar />
-      </div>
-      <div>
-        <div className='flex flex-col'>
+        <div className='flex-1'>
           <AccountBalance />
-        </div>
-        <div>
           <CurrentPackage />
         </div>
-      </div>
     </div>
   );
 }

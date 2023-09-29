@@ -16,8 +16,8 @@ function CurrentPackage() {
   };
 
   return (
-    <div className="flex items-center justify-center w-full h-screen bg-gray-100">
-      <div className="flex flex-col items-center justify-center w-[60%] h-1/2 bg-white rounded-lg shadow-lg">
+    <div className="flex items-center justify-center w-full bg-gray-100 ">
+      <div className="flex flex-col items-center justify-center w-[60%] h-1/2 bg-white rounded-lg shadow-lg mt-3 mb-3">
         <div className="p-5 space-y-5">
           <h1 className="text-2xl font-bold text-black-500">Current Package</h1>
           <div className="space-y-2">
