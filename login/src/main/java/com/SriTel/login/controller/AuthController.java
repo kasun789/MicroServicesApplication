@@ -1,8 +1,7 @@
 package com.SriTel.login.controller;
 
-import com.SriTel.login.client.UserClient;
 import com.SriTel.login.dto.request.UserLoginRequestDTO;
-import com.SriTel.login.dto.request.UserSaveRequestDTO;
+
 import com.SriTel.login.service.impl.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -19,7 +18,6 @@ public class AuthController {
     private AuthService authService;
     @Autowired
     private AuthenticationManager authenticationManager;
-
     @PostMapping( "/userLogin")
     public String loginUser(@RequestBody UserLoginRequestDTO userLoginRequestDTO){
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(userLoginRequestDTO.getEmail(),userLoginRequestDTO.getPassword()));
@@ -29,6 +27,7 @@ public class AuthController {
         }else {
             throw new RuntimeException("Invalid Access!");
         }
+
 
     }
     @GetMapping("/validate")

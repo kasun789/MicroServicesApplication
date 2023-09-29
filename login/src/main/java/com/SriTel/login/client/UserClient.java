@@ -6,9 +6,11 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "user-service", url = "${spring.application.config.user-url}")
+import java.util.Optional;
+
+@FeignClient(name = "signup", url = "${spring.application.config.user-url}")
 public interface UserClient {
 
-    @PostMapping(path = "/user/getUser")
-    User getUserByEmail(@RequestBody UserLoginRequestDTO userLoginRequestDTO);
+    @PostMapping( "/getUser")
+    Optional<User> getUserByEmail(@RequestBody UserLoginRequestDTO userLoginRequestDTO);
 }

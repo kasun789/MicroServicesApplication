@@ -1,8 +1,5 @@
 package com.SriTel.login.service;
 
-import com.SriTel.login.dto.request.UserLoginRequestDTO;
-import com.SriTel.login.dto.request.UserSaveRequestDTO;
-import com.SriTel.login.model.User;
 import com.SriTel.login.service.impl.AuthService;
 import com.SriTel.login.service.impl.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;

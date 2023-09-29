@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface UserService{
     public User add(User user);
 
-    User getUserByEmail(String email);
+    Optional<User> getUserByEmail(String email);
 
     public List<User> viewAll();
     public Optional<User> update(User user, int userId);

@@ -8,6 +8,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/user")
@@ -51,8 +52,8 @@ public class UserController {
     }
 
     @PostMapping( "/getUser")
-    public User getUserByEmail(@RequestBody UserLoginRequestDTO userLoginRequestDTO){
-      User user = userService.getUserByEmail(userLoginRequestDTO.getEmail());
+    public Optional<User> getUserByEmail(@RequestBody UserLoginRequestDTO userLoginRequestDTO){
+        Optional<User> user = userService.getUserByEmail(userLoginRequestDTO.getEmail());
       return user;
     }
 

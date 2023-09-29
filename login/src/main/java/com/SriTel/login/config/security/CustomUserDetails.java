@@ -1,6 +1,5 @@
 package com.SriTel.login.config.security;
 
-import com.SriTel.login.dto.request.UserLoginRequestDTO;
 import com.SriTel.login.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
